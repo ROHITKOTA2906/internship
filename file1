@@ -84,7 +84,46 @@ Answer- captains={
 20 ) You’ve created a dictionary, added data, checked for the existence of keys, and iterated over it with a for loop. Now you’re ready to delete a key from this dictionary: captains = { "Enterprise": "Picard", "Voyager": "Janeway", "Defiant": "Sisko", "Discovery": "unknown", } What statement will remove the entry for the key "Discovery"? a) del captains b) captains.remove() c) del captains["Discovery"] d) captains["Discovery"].pop()
 Answer-c) del captains["Discovery"]
 
+16)Which Python code could replace the ellipsis (...) below to get the following output? (Select all that
+apply.)
+captains = {
+"Enterprise": "Picard",
+"Voyager": "Janeway",
+"Defiant": "Sisko",
+}
+Enterprise Picard,
+Voyager Janeway
+Defiant Sisko
+a) for ship, captain in captains.items():
+print(ship, captain)
+b) for ship in captains:
+print(ship, captains[ship])
+c) for ship in captains:
+print(ship, captains)
+d) both a and b
+Answer-b
+ for ship in captains:
+print(ship, captains[ship])
 
+19 ) You’re really building out the Federation Starfleet now! Here’s what you have:
+captains = {
+"Enterprise": "Picard",
+"Voyager": "Janeway",
+"Defiant": "Sisko",
+"Discovery": "unknown",
+}
+Now, say you want to display the ship and captain names contained in the dictionary, but you also
+want to provide some additional context. How could you do it?
+a) for item in captains.items():
+print(f"The [ship] is captained by [captain].")
+b) for ship, captain in captains.items():
+print(f"The {ship} is captained by {captain}.")
+c) for captain, ship in captains.items():
+print(f"The {ship} is captained by {captain}.")
+d) All are correct
+Answer-b
+for ship, captain in captains.items():
+print(f"The {ship} is captained by {captain}.")
 
 
 
